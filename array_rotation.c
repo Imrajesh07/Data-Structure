@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int T, n[100], a[200][100], i, j, temp, d, k;
+	int T, n[100], a[200][100], i, j, temp, d, k, l;
 	scanf("%d", &T);
 	for (i=0; i < T; i++)
 	{
@@ -31,8 +31,8 @@ int main() {
 			}
 			else
 			{
-				for (k = 0; k < n[i] - 1; k++)
-					a[i][k] = a[i][k + 1];
+				for (l = 0; l < n[i] - 1; l++)
+					a[i][l] = a[i][l + 1];
 			}
 			n[i]--;
 			d++;
